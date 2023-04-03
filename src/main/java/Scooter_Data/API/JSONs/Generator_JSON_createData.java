@@ -49,6 +49,10 @@ public class Generator_JSON_createData {
 				registerJSON = String.format("{\"login\": \"\",\"password\": \"%s\",\"firstName\": \"\"}", password);
 				return registerJSON;
 			}
+			case "000": {
+				registerJSON = "{\"login\": \"\",\"password\": \"\",\"firstName\": \"\"}";
+				return registerJSON;
+			}
 
 			default: {
 				registerJSON = "{\"login\": \"defLogin\",\"password\": \"defPWD\",\"firstName\": \"defName\"}";
