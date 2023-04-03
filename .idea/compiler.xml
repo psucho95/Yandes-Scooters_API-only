@@ -6,12 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Yandex_Scooters" />
+        <module name="Yandes-Scooters" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Yandex Scooters" target="18" />
-      <module name="Yandex_Scooters" target="19" />
+      <module name="Yandes-Scooters" target="19" />
     </bytecodeTargetLevel>
   </component>
 </project>
