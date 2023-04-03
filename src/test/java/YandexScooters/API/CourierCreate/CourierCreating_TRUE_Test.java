@@ -11,7 +11,7 @@ import static Scooter_Data.API.CommonData.StaticData.*;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
-public class CourierCreating_TRUE extends BasePage_API {
+public class CourierCreating_TRUE_Test extends BasePage_API {
 	@Test
 	@DisplayName("Курьер создаётся корректно")
 	public void CourierCreatingTrue_test()

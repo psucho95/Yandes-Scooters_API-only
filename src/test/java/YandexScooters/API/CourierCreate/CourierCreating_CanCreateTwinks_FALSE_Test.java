@@ -10,7 +10,7 @@ import static Scooter_Data.API.CommonData.StaticData.courierCreate;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
-public class CourierCreating_CanCreateTwinks_FALSE extends BasePage_API {
+public class CourierCreating_CanCreateTwinks_FALSE_Test extends BasePage_API {
 	@Test
 	@DisplayName("Невозможность создания 2 одинаковых курьеров")
 	public void  CourierCreating_CanCreateTwinks_FALSE()
