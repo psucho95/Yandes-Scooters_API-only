@@ -1,7 +1,7 @@
 package YandexScooters.API.CourierCreate;
 
 import Scooter_Data.API.BasePage_API;
-import Scooter_Data.API.JSONs.Generator_JSON_createData;
+import Scooter_Data.API.JSONs.Generator_JSON_courierData;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
 import org.junit.Test;
@@ -15,7 +15,7 @@ public class CantCreateTwinks_Test extends BasePage_API {
 	@DisplayName("Невозможность создания 2 одинаковых курьеров")
 	public void  CourierCreating_CanCreateTwinks_FALSE()
 	{
-		Generator_JSON_createData courierData = new Generator_JSON_createData();
+		Generator_JSON_courierData courierData = new Generator_JSON_courierData();
 		Response courier1 =
 						given()
 										.header("Content-type", "application/json")

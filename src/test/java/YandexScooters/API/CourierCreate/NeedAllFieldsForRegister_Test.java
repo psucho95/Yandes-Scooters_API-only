@@ -1,7 +1,7 @@
 package YandexScooters.API.CourierCreate;
 
 import Scooter_Data.API.BasePage_API;
-import Scooter_Data.API.JSONs.Generator_JSON_createData;
+import Scooter_Data.API.JSONs.Generator_JSON_courierData;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
 import org.junit.Test;
@@ -13,16 +13,16 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
 @RunWith(Parameterized.class)
-public class NeedAllFields_Test extends BasePage_API {
+public class NeedAllFieldsForRegister_Test extends BasePage_API {
 	String json;
 
-	public NeedAllFields_Test(String json) {
+	public NeedAllFieldsForRegister_Test(String json) {
 		this.json = json;
 	}
 
 	@Parameterized.Parameters
 	public static Object[][] GettingSomeUsers() {
-		Generator_JSON_createData courierData = new Generator_JSON_createData();
+		Generator_JSON_courierData courierData = new Generator_JSON_courierData();
 		return new Object[][]
 				{
 						{courierData.JSON_Register(0, 0, 0)},
